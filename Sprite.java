@@ -65,61 +65,16 @@ public class Sprite
 	 * @param xsize New horizontal position, in pixels.
 	 * @param ysize New vertical position, in pixels.
 	 */
-	public void setPosition(int xposition, int yposition)
-	{
-		this.xposition = xposition;
-		this.yposition = yposition;
-	}
+...........
+...........
+...........
+...........
+...........
+...........
+...........
+...........
+...........
 
-	/**
-	 * Obtain the current horizontal (x-direction) size of this sprite.
-	 * @return Horizontal size, in pixels.
-	 */
-	public int getXsize()
-	{
-		return this.xsize;
-	}
-	
-	/**
-	 * Obtain the current vertical (y-direction) size of this sprite.
-	 * @return Vertical size, in pixels.
-	 */
-	public int getYsize()
-	{
-		return this.ysize;
-	}
-	
-	/**
-	 * Change the size of this sprite.
-	 * The minimum size is one pixel in each dimension.
-	 * @param xsize New horizontal size, in pixels.
-	 * @param ysize New vertical size, in pixels.
-	 */
-	public void setSize(int xsize, int ysize)
-	{
-		this.xsize = Math.max(1, xsize);
-		this.ysize = Math.max(1, ysize);
-	}
-	
-	/**
-	 * Change the image used by this sprite.
-	 * Image is loaded from the file with the given name.
-	 * GIF, PNG, and JPEG formats are supported.
-	 * @param filename Name of file containing image data.
-	 */
-	public void setImage(String filename)
-	{
-		try
-		{
-			this.image = ImageIO.read(new File(filename));
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-			System.exit(-1);
-		}
-	}
-	
 	/////////////////////////////////////////////////////////////////////////////
 	// for use by Animation class only
 	/////////////////////////////////////////////////////////////////////////////
